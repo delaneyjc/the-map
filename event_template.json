@@ -1,0 +1,47 @@
+		{
+			"name": "",
+			"directions": [
+				"",
+				"",
+				"",
+				""
+			],
+			"visited": false,
+			"is_death": false,
+			"is_victory": false,
+			"intro_message": "",
+			"visited_message": "",
+			"death_message": "",
+			"victory_message": "",
+			"look_message": "",
+			"obtainable_items": [
+				{
+					"item": "",
+					"message": "",
+					"required":
+				}
+			],
+			"unobtainable_items": [
+				{
+					"item": "",
+					"message": ""
+				}
+			],
+			"required_to_live": [
+				{
+					"item": "",
+					"message": ""
+				}
+			],
+			"required_to_die": [
+				{
+					"item": ""
+				}
+			],
+			"choices": [
+				{
+					"message": "",
+					"item": ""
+				}
+			]
+		},

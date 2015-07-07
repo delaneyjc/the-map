@@ -1,0 +1,1004 @@
+{
+    "events": [
+        {
+            "name": "meadow1",
+            "directions": [
+                false,
+                "desert1",
+                "cabin1",
+                false
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "You find yourself in a meadow.\nYou are very thirsty after walking through the desert and need water to live.",
+            "death_message": "Unfortunately you couldn't find any water.\nYou pass out. dun dun dun.....",
+            "look_message": "The grass is pretty long! You could go backwards through the desert or south into the unknown.",
+            "unobtainable_items": [
+                {
+                    "item": "grass",
+                    "message": "It cuts your hand as you try to rip it out of the ground. \"OUCH!\""
+                }
+            ],
+            "required_to_live": [
+                {
+                    "item": "water",
+                    "message": "You took a swig of your water bottle.\n\"Always be Prepared, right?!\""
+                }
+            ]
+        },
+        {
+            "name": "desert1",
+            "directions": [
+                false,
+                "mountains1",
+                false,
+                "meadow1"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You stumble into a desert.",
+            "look_message": "Everywhere you look you see sand.\nYou really should keep heading west, but you could turn back east.",
+            "obtainable_items": [
+                {
+                    "item": "sand",
+                    "message": "You fill your pockets with sand... what a wierdo."
+                }
+            ]
+        },
+        {
+            "name": "mountains1",
+            "directions": [
+                false,
+                "rainforest1",
+                "forest1",
+                "desert1"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "As you climb some mountains you realize it's been a couple days since you ate.",
+            "death_message": "\"soooo... hungry....\"",
+            "look_message": "From this high up you can see forests, deserts, and a great city of green in the distance!\nLooks like any direction but north is available.",
+            "unobtainable_items": [
+                {
+                    "item": "city",
+                    "message": "WHAT?!?!?!"
+                }
+            ],
+            "required_to_live": [
+                {
+                    "item": "food",
+                    "message": "you eat some food\n*chomp* *chomp* *chomp* \"MMmmmMMM!\""
+                }
+            ]
+        },
+        {
+            "name": "cabin1",
+            "visited": false,
+            "is_death": false,
+            "is_victory": true,
+            "intro_message": "You find a large oak tree in the middle of the meadow.\n",
+            "victory_message": "The wildlife here is abundent!\nYou think you'll start a new life here...\nmaybe with little squirrels babies and your friends."
+        },
+        {
+            "name": "rainforest1",
+            "directions": [
+                false,
+                "village1",
+                "water1",
+                "mountains1"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You find yourself walking into a very hot and humid rainforest.",
+            "look_message": "A monkey laughs at you because you are sweating so much.\nLooks like you can go any direction except north.\nAnything to get out of this heat!",
+            "unobtainable_items": [
+                {
+                    "item": "monkey",
+                    "message": "Why would you even want a monkey that laughs at you??\nHe is too high up in the tree anyway."
+                },
+                {
+                    "item": "sweat",
+                    "message": "You don't have anything to collect that with.\nTaste salty."
+                }
+            ]
+        },
+        {
+            "name": "village1",
+            "directions": [
+                false,
+                false,
+                "village2",
+                "rainforest1"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "As you continue walking forward, you see a tribe of tribal people.",
+            "death_message": "However the indians did not understand your language and decided to sacrifice you to their god."
+        },
+        {
+            "name": "forest1",
+            "directions": [
+                "mountains1",
+                "water1",
+                "forest2",
+                false
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "As you continue walking through the forest, you find a very dense area.\nIt becomes harder to walk.\nAs you look down you realize the bushes have berries on them, but you are unsure of what kind of berries they are.",
+            "visited_message": "You begin to walk back into a forest.\nThis place seems fimilar.\nIt has many bushes and trees.",
+            "look_message": "You realize a path begins to clear in everyway except to the west.",
+            "unobtainable_items": [
+                {
+                    "item": "bushes",
+                    "message": "No you may not have the whole bush!"
+                }
+            ],
+            "choices": [
+                {
+                    "choice": "pick berries",
+                    "message": "You place said berries in your pocket.",
+                    "item": "food"
+                },
+                {
+                    "choice": "leave berries",
+                    "message": "You decide it's probably best not to touch them."
+                }
+            ]
+        },
+        {
+            "name": "water1",
+            "directions": [
+                "rainforest1",
+                "village2",
+                "water2",
+                "forest1"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "After walking through the forest for countless hours, you finally approach a large lake of water.",
+            "look_message": "You see a clear path in every direction and it looks like you can go swimming if you go south.\nA nice, cool, refreshing bath might be nice.",
+            "obtainable_items": [
+                {
+                    "item": "water",
+                    "message": "You fill your bottle full of water.",
+                    "required": "bottle"
+                }
+            ]
+        },
+        {
+            "name": "village2",
+            "directions": [
+                "village1",
+                "village3",
+                false,
+                "water1"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "From the distance you see a village!\nIt finally looks like you could get some help around here.",
+            "look_message": "It looks like a nice spot for a village but you can't see any people yet.\nIt looks like the only ways you can continue forward is to the north or the east.\nYou could also go west and head back to the water.",
+            "unobtainable_items": [
+                {
+                    "item": "people",
+                    "message": "They're not your slave!"
+                }
+            ]
+        },
+        {
+            "name": "village3",
+            "directions": [
+                false,
+                false,
+                false,
+                "village2"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": true,
+            "intro_message": "As you get closer to the village, you realize it's not a village at all, just a group of campers",
+            "victory_message": "You end up staying with them for their camping trip.\nYou tell them about your incredible journey and they give you plenty if food and water.\nAfter the trip is over they take you back to your home so you can proceed with your normal life."
+        },
+        {
+            "name": "wall1",
+            "directions": [
+                false,
+                "forest2",
+                false,
+                false
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "As you are walking through the forest, you come across an empty bottle.",
+            "visited_message": "Looks like you've stumbled upon this area of the forest before.\nYou find an empty bottle.",
+            "look_message": "Looks like the only path is from the way you came, east.",
+            "obtainable_items": [
+                {
+                    "item": "bottle",
+                    "message": "Maybe this will come in handy or just take up pocket space."
+                }
+            ]
+        },
+        {
+            "name": "forest2",
+            "directions": [
+                "forest1",
+                false,
+                "cabin2",
+                "wall1"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "The pig decides to follow you on your journey.\nLooks like you made the right choice.\nOr maybe not.",
+            "visited_message": "You continue walking in the forest.\nIt's seems like this forest is never-ending!",
+            "look_message": "You see many trees and bushes and some squirrels.\nLooks like you can go in any direction but east.",
+            "obtainable_items": [
+                {
+                    "item": "squirrels",
+                    "message": "Cool!\nI got squirrels!!"
+                }
+            ],
+            "unobtainable_items": [
+                {
+                    "item": "trees",
+                    "message": "You are not strong enough.\nBut you can hug it you're a tree hugger."
+                }
+            ]
+        },
+        {
+            "name": "water2",
+            "directions": [
+                "water1",
+                false,
+                false,
+                false
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "Ahhh, this water feels nice doesn't it.\nWait what is that!!\nIs that a shark!!!!",
+            "death_message": "Maybe going swimming wasn't such a good idea after all...\nBut the shark enjoyed it."
+        },
+        {
+            "name": "lava1",
+            "directions": [
+                false,
+                "cabin2",
+                false,
+                false
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "What...\nWhat is this.\nWhy is it so hot in here?",
+            "death_message": "AHHHHH!\nLAVA!!!!\nHELP ME!!\nAHHHHHH!"
+        },
+        {
+            "name": "cabin2",
+            "directions": [
+                "forest2",
+                false,
+                "start1",
+                "lava1"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You begin walking through the woods.\nShortly after, you find a brick cabin.\nYou go inside the cabin and find,\nof all things,\na pig.",
+            "visited_message": "Looks like you have been here before.\nThis is the pigs old home!\nYou stop at the cabin for a quick break and then continue.\nLooks like you can head west or south.",
+            "look_message": "You see an obvious exit to the west, or you could head back south.",
+            "choices": [
+                {
+                    "choice": "eat pig",
+                    "message": "\"mMmMmM... TASTY!\""
+                },
+                {
+                    "choice": "befriend pig",
+                    "message": "You decide you and the pig would probably be best friends.\nSo you decide to bring him with you...\n\nThe pig says:\nDon't go west! There is a secret path that can take you north.",
+                    "item": "pig"
+                }
+            ]
+        },
+        {
+            "name": "jungle1",
+            "directions": [
+                "jungle5",
+                "jungle2",
+                "savannah1",
+                "cliff1"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "Boy! Is she beautiful!\nEveryting about her is perfect!",
+            "death_message": "Wait\nWh-...\nWhy does she have a knife?",
+            "visited_message": "Good thing you already dealt with the girl. You may pass without harm.",
+            "look_message": "Looks like you can go ay direction you want.\nYou're also a murderer now.",
+            "required_to_live": [
+                {
+                    "item": "knife",
+                    "message": "She pulls out a knife,\nbut,\nbefore she can make a move,\nyou stab her and she falls to the floor."
+                }
+            ],
+            "required_to_die": [
+                {
+                    "item": "backpack"
+                }
+            ]
+        },
+        {
+            "name": "jungle2",
+            "directions": [
+                false,
+                "jungle3",
+                "savannah2",
+                "jungle1"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You are walking through the jungle\nYou see exits in every direction except north.\nWhoa!\nWho is she!\nYou've stumbled upon a beautiful lady, who's all alone in the jungle.\nShe says if you go west I will follow but south or east I will not.\nHer voice is so soothing.\nShe begins begging you to go west with her.",
+            "visited_message": "You've been here before!\nLook it's the beautiful lady again! You can go anyway except north.",
+            "look_message": "I already to you which way the paths were.\nJust go with the lady.",
+            "unobtainable_items": [
+                {
+                    "item": "lady",
+                    "message": "She is not up for grabs."
+                }
+            ]
+        },
+        {
+            "name": "jungle3",
+            "directions": [
+                false,
+                "start1",
+                false,
+                "jungle2"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "Ahhh!\nSnakes!",
+            "visited_message": "Good thing you already dealt with these snake. You can pass without harm.",
+            "death_message": "Ouch!\nThat one bite me!\nUgghh!\nI feel woosey.",
+            "look_message": "You can see a path to the west or go back east where you came.",
+            "obtainable_items": [
+                {
+                    "item": "knife",
+                    "message": "You take your knife out of the bloody snakes body.\nEeeewwwww.\nThat's nasty."
+                }
+            ],
+            "unobtainable_items": [
+                {
+                    "item": "snake",
+                    "message": "Eww! Gross!"
+                }
+            ],
+            "required_to_live": [
+                {
+                    "item": "save",
+                    "message": ""
+                }
+            ],
+            "choices": [
+                {
+                    "choice": "kill snake",
+                    "message": "You stare at the snake and it dies of embarassment.\n... or maybe it was that knife you threw.",
+                    "required": "knife",
+                    "item": "save"
+                },
+                {
+                    "choice": "feed snake",
+                    "message": "Ye had some food in ye pocket.\nYonder snake fallith asleep.",
+                    "required": "food",
+                    "item": "save"
+                },
+                {
+                    "choice": "let snake bite you",
+                    "message": "\"Here snakey snakey snakey...\"\nIt clamps down on your ankle."
+                }
+            ]
+        },
+        {
+            "name": "start1",
+            "directions": [
+                "cabin2",
+                "pit1",
+                "meadow2",
+                "jungle3"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You awake on the twiggy floor of a forest.\n\n\"Where am I?\"\nOn the floor you find:\nan apple\na knife\nand a grappling hook.\nYou can only pick one.",
+            "visited_message": "Hey!\nRemember this place?\nIt's where you started!",
+            "look_message": "There is a path in every direction.\nIt's obviously a forest.",
+            "choices": [
+                {
+                    "choice": "take apple",
+                    "message": "A shiny apple. It looks good... too good.",
+                    "item": "food"
+                },
+                {
+                    "choice": "take knife",
+                    "message": "\"Heh heh! YOU'RE ALL GONNA DIE!!!\"",
+                    "item": "knife"
+                },
+                {
+                    "choice": "take grappling hook",
+                    "message": "\"I'm hooked...\"",
+                    "item": "hook"
+                }
+            ]
+        },
+        {
+            "name": "pit1",
+            "directions": [
+                false,
+                "cage1",
+                false,
+                "start1"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "You enter a room and immediatly step on a pressure plate that makes the floor drop.",
+            "death_message": "Ahhh!\nThere's nothing you can do to stop it now.\nYou hit the ground.",
+            "look_message": "looks like you can go east or go back west.",
+            "required_to_live": [
+                {
+                    "item": "hook",
+                    "message": "Good thing you picked the grappling hook!\nYou threw it onto the wall and quickly climbed up it!"
+                }
+            ]
+        },
+        {
+            "name": "cage1",
+            "directions": [
+                false,
+                "cage2",
+                "cage3",
+                "pit1"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You continue walking and realize you walked straight into a cage.\nYou look up and hear birds.\nThey're very annoying.\nThey are hurting your ears.",
+            "look_message": "You don't know how much more of this you can take.\nYou see exits everywhere except north.",
+            "unobtainable_items": [
+                {
+                    "item": "birds",
+                    "message": "BBBaacccaaaccckkk!"
+                }
+            ]
+        },
+        {
+            "name": "cage2",
+            "directions": [
+                false,
+                false,
+                false,
+                "cage1"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "God those birds were annoying!\nYour ears are bleeding!",
+            "death_message": "Ugghh your ears hurt so much!\nYou have lost too much blood.\nYou fall to the floor."
+        },
+        {
+            "name": "savannah1",
+            "directions": [
+                false,
+                "savannah2",
+                false,
+                false
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "You have been walking for too looong!\nAnd you're sooooo tired!\nYou need something to drink badly.\nEven if you had some stored water, it dried out.",
+            "death_message": "SOOOOOO.....\nTHIRSTY......"
+        },
+        {
+            "name": "savannah2",
+            "directions": [
+                "jungle2",
+                "savannah3",
+                "jungle4",
+                "savannah1"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "Hey, that elephant looks like it wants a hug!",
+            "visited_message": "That elephant still is gone, which is probably good.",
+            "death_message": "*STOMP* *STOMP*",
+            "look_message": "Grass as far as the eye can see.\nA path in every direction",
+            "unobtainable_items": [
+                {
+                    "item": "mouse",
+                    "message": "That guy is long gone, sorry."
+                },
+                {
+                    "item": "elephant",
+                    "message": "Even if she was still here, where would you even keep it?"
+                }
+            ],
+            "required_to_live": [
+                {
+                    "item": "mouse",
+                    "message": "The mouse jumps out of your shirt and scares the elephant away. \"Woof!\"",
+                    "only_first_time": true
+                }
+            ]
+        },
+        {
+            "name": "savannah3",
+            "directions": [
+                false,
+                "meadow2",
+                false,
+                "savannah2"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "It's a savannah grassland, feels grassy.",
+            "look_message": "I already told you, it's grassy.\nSeems like more savannah to the west, and a meadow to the east."
+        },
+        {
+            "name": "meadow2",
+            "directions": [
+                "start1",
+                "water3",
+                false,
+                "savannah3"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You begin waking through a meadow.",
+            "look_message": "There seems to be a mouse running around your feet.\nLooks like you can catch 'em.\nYou just don't seem to be able to walk south.",
+            "obtainable_items": [
+                {
+                    "item": "mouse",
+                    "message": "He seems happy living in your shirt pocket."
+                }
+            ]
+        },
+        {
+            "name": "water3",
+            "directions": [
+                false,
+                "cage3",
+                "water5",
+                "meadow2"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You stumble upon an pond.",
+            "visited_message": "",
+            "death_message": "",
+            "victory_message": "",
+            "look_message": "You can go east or west,\nor if you go south you can take a dip in the pond.",
+            "obtainable_items": [
+                {
+                    "item": "water",
+                    "message": "You fill your bottle with water.",
+                    "required": "bottle"
+                }
+            ]
+        },
+        {
+            "name": "cage3",
+            "directions": [
+                "cage1",
+                "road1",
+                "cave1",
+                "water3"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You're now in the bottom of a cage-like cave.",
+            "visited_message": "",
+            "death_message": "",
+            "victory_message": "",
+            "look_message": "Feathers liter the ground.\nThere is light to the north, east, and west.\nYou notice a hidden path to the south.",
+            "obtainable_items": [
+                {
+                    "item": "feather",
+                    "message": "You take a rather large one, and stick it behind your ear \"Macaroni!\""
+                }
+            ]
+        },
+        {
+            "name": "road1",
+            "directions": [
+                false,
+                "city1",
+                "forest3",
+                "cage3"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You happen upon a road made of yellow bricks.\nYour thoughts flood of lollipops, guilds, kansas, and some cool looking shoes.",
+            "visited_message": "Feels like you've been here before, eh?",
+            "death_message": "",
+            "victory_message": "",
+            "look_message": "It's a yellow brick road,\ndoes that need to be spelt out to you!\nYou can follow it east or west.\nTo the south, there is a forest of fruit!",
+            "unobtainable_items": [
+                {
+                    "item": "brick",
+                    "message": "They seem stuck in place."
+                }
+            ]
+        },
+        {
+            "name": "city1",
+            "directions": [
+                false,
+                "city2",
+                "city3",
+                "road1"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "Following the goldish hued pathway there is a city in front of you.",
+            "visited_message": "The emerald city remains there.",
+            "look_message": "It's a green, some may say emerald, city.\nThe city expands east or south.\nYou could go back west."
+        },
+        {
+            "name": "city2",
+            "directions": [
+                false,
+                false,
+                false,
+                "city1"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "A beautiful castle lay before you,\nthe owner, a women, beckons you upstairs...",
+            "death_message": "She seems to be not good.\nHer green skin says a lot.\nShe mutters a few words."
+        },
+        {
+            "name": "jungle4",
+            "directions": [
+                false,
+                false,
+                false,
+                false
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": true,
+            "intro_message": "You find a clearing in the jungle.\nSeems like a good place to make a tree house.",
+            "victory_message": "\"Feels like I just won, like, I don't know.... \nlife?\""
+        },
+        {
+            "name": "water4",
+            "directions": [
+                false,
+                false,
+                false,
+                false
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "you come to what looks like the mouth of a river, and it's moving pretty fast.",
+            "visited_message": "",
+            "death_message": "\"WAIT!!\"\n\nIt is quickly pulling you further from the shore."
+        },
+        {
+            "name": "water5",
+            "directions": [
+                "water3",
+                false,
+                "water6",
+                "water4"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "This water is cold, but refreshing.",
+            "visited_message": "",
+            "death_message": "",
+            "victory_message": "",
+            "look_message": "You could get out to the north, but you could keep swimming...\nThe pond continues to the south and west.",
+            "unobtainable_items": [
+                {
+                    "item": "water",
+                    "message": "You're swimming, the bottle is safely on shore",
+                    "required": "bottle"
+                }
+            ]
+        },
+        {
+            "name": "cave1",
+            "directions": [
+                false,
+                false,
+                false,
+                false
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "It seems to be a dead end.",
+            "death_message": "You're too tired to turn back. Maybe you'll just take a nap."
+        },
+        {
+            "name": "forest3",
+            "directions": [
+                false,
+                false,
+                false,
+                false
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "What is up with those trees!?\nThey seem to have a mind of their own.",
+            "death_message": "\"OUCH! Who threw that?\"\nMore apples pelt you."
+        },
+        {
+            "name": "city3",
+            "directions": [
+                false,
+                false,
+                false,
+                false
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "go_to_random": true,
+            "intro_message": "A man with a large top hat who claims to be \"The Wizard\" introduces himself.\nClaims he can take you home in his hot air balloon.\nYou take him up on his offer.\n.\n..\n...\n....\n.....\n......\nThe winds pick up and you get blown off course."
+        },
+        {
+            "name": "water6",
+            "directions": [
+                false,
+                false,
+                false,
+                false
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": true,
+            "intro_message": "An endless pond in all directions. \"How long have I been swimming?\"",
+            "victory_message": "You jump awake, \"Was it all a dream?\"\nYou pick yourself up out of the bed."
+        },
+        {
+          "name": "jungle5",
+          "directions": [
+            false,
+            "storm1",
+            "jungle1",
+            "mountains2"
+          ],
+          "visited": false,
+          "is_death": false,
+          "is_victory": false,
+          "intro_message": "You keep walking through what seems like an endless jungle.\nSuddenly you see a cat,\na backpack,\nand a hang glider,\nbut you can only carry one.",
+          "visited_message": "You are walking through the jungle\nYou realize this is where you saw the cat, backpack, and glider!",
+          "look_message": "Looks like you can head any direction except north.",
+          "choices": [
+              {
+                  "choice": "take cat",
+                  "message": "\"Meow\"",
+                  "item": "cat"
+              },
+              {
+                  "choice": "take backpack",
+                  "message": "\"Ughh!\nThis is heavy!\nThere better be something useful in this.\"",
+                  "item": "backpack"
+              },
+              {
+                  "choice": "take hang glider",
+                  "message": "\"Now if only I had something to jump off of!\"",
+                  "item": "glider"
+              }
+            ]
+          },
+          {
+            "name": "mountains2",
+            "directions": [
+              "water7",
+              "jungle5",
+              "cliff1",
+              "mountains3"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "You begin to come across a large mountain range.\nIt's very rocky.",
+            "death_message": "You are curious about what's in your backpack so you open it up.\nInside you find.\na blanket\na full bottle\nand a compass.\nYou realize you are very thirsty\nso decide to take a drink from the bottle.\nShortly after drinking it,\nyou begin to not feel well.\nYou start coughing and vomitting\nand then you fall to the ground",
+            "look_message": "Looks like you can head anywhere.",
+            "obtainable_items": [
+              {
+                "item": "rock",
+                "message": "\"I'm gonna name it Timmy!\""
+              }
+            ],
+            "required_to_die": [
+              {
+                "item": "backpack"
+              }
+            ]
+          },
+          {
+            "name": "cliff1",
+            "directions": [
+              "mountains2",
+              "jungle1",
+              "hills1",
+              "mountains4"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "You keep walking along the path when, suddenly, giant spiders start chasing you.\nYou start sprinting as fast as you can!\nUp ahead you realize there is a cliff.\nYou keep running and reach the edge of the cliff\nYou have two choices:",
+            "visited_message": "Hey you've been here before!\nThis is where the spiders chased you\n but they all feel off the cliff.\nYou easily hang glide across it.",
+            "death_message": "",
+            "look_message": "You can go anywhere except south.",
+            "required_to_live": [
+              {
+                "item": "glider",
+                "message": "You start sprinting and realize there is a cliff up ahead\nso you pull out your hang glider and keep running.\nWhen you reach the cliff,\nyou jump and easily glide across.\n\"Wheeee\"\nYou watch the spiders fall off the cliff and laugh at their stupidity!"
+              }
+            ],
+            "choices": [
+      				{
+                "choice": "jump off cliff",
+      					"message": "You jump hoping you can land on a ledge\nbut you can't.\nYou hit the ground very hard"
+      				},
+              {
+                "choice": "get eaten by spiders",
+                "message": "The spiders eat you alive"
+              }
+      			]
+          },
+          {
+            "name": "mountains3",
+            "directions": [
+              false,
+              "mountains2",
+              "mountains4",
+              false
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You continue walking through the mountains.",
+            "look_message": "Looks like mountains\nDuh\nYou can go south or back east.",
+            "obtainable_items": [
+              {
+                "item": "mountain",
+                "message": "I'll just keep that in my pocket."
+              }
+            ]
+          },
+          {
+            "name": "storm1",
+            "directions": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "As you continue walking through the jungle,\nit starts getting very cloudy.\nSoon the rain starts.\nNearby you see lightning.\nSo you, stupidly, decide to climb the biggest tree for shelter.",
+            "death_message": "Not long after that lightning strikes the tree\nIt breaks in half.\nYou jump down and have broken many bones.\nAnd to add the cherry on top,\nthe tree falls on top of you"
+          },
+          {
+            "name": "water7",
+            "directions": [
+              "savannah4",
+              false,
+              "mountains2",
+              false
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "After walking for forever you find some water. You can go north or south.",
+            "visited_message": "You continue walking and find some water.\nPaths lead north and south.",
+            "look_message": "You notice fish in the water but they are moving really fast!",
+            "obtainable_items": [
+              {
+                "item": "fish",
+                "message": "A fish comes close to you but slips out of your hand.\nThen your cat claws it and sets it on the shore.\n\"Good Kitty!\"",
+                "required": "cat"
+              },
+              {
+                "item": "water",
+                "message": "Maybe you will need this.",
+                "required": "bottle"
+              }
+            ]
+          },
+          {
+      			"name": "savannah4",
+      			"directions": [
+      				"savannah5",
+      				"meadow3",
+      				"water7",
+      				false
+      			],
+      			"visited": false,
+      			"is_death": false,
+      			"is_victory": false,
+      			"intro_message": "You start walking in a savnnah.",
+      			"look_message": "Looks like you can go anyway except west."
+      		},
+          {
+      			"name": "savannah5",
+      			"directions": [
+      				false,
+              false,
+              false,
+              false
+      			],
+      			"visited": false,
+      			"is_death": true,
+      			"is_victory": false,
+      			"intro_message": "You continue walking through a savannah.",
+      			"death_message": "Suddenly you hear a rumble in the distance.\nYou begin to see animals running right at you!\n\"Stampede!!\"\nRhinos,\nelephants,\ngiraffes,\nlions,\nzebras,\nand more crush you"
+      		},
+          {
+      			"name": "meadow3",
+      			"directions": [
+      				false,
+      				"cabin1",
+      				"false",
+      				"savannah4"
+      			],
+      			"visited": false,
+      			"is_death": true,
+      			"is_victory": false,
+      			"intro_message": "After walking through that savannah, you come across a meadow.\nYou begin to feel really hungry.\nYou seriously need to eat something!\nWhen was the last time you ate?",
+            "visited_message": "You start walking through a meadow.",
+      			"death_message": "You starve to death",
+      			"look_message": "Looks like you could head into the unknown to the east\nor go west back to that savannah.",
+      			"required_to_live": [
+      				{
+      					"item": "fish",
+      					"message": "You start a fire and cook your fish.\nThen you share it with your cat.\n\"Yum!\""
+      				}
+      			]
+      		},
+          {
+      			"name": "mountains4",
+      			"directions": [
+      				"mountains3",
+      				false,
+              false,
+              false
+      			],
+      			"visited": false,
+      			"is_death": true,
+      			"is_victory": false,
+      			"intro_message": "You walk up mountain and become tired.\nYou see a nice cave to take a nap.\nYou walk inside the cave and find a grizzly bear!",
+      			"death_message": "The bear jumps up and claws you right in the face.\n\"I get this far and your gonna kill me with a grizzly bear and not even give me a chance to save myself?\"\n\"Yep\""
+      		}
+      ]
+}
