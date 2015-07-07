@@ -6,7 +6,7 @@ import json
 import sys
 import random
 
-TEXT_SPEED = .1
+TEXT_SPEED = 1
 STARTING_SCENE = 'start1'
 HELP_TEXT = """Available Commands:
 -------------------
