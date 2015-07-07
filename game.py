@@ -36,7 +36,6 @@ class Game:
         self.is_playing = True
         self.turn = 0
         self.inventory = []
-        self.map = Map()
         with open("events.json") as scene_data:
             self.scenes = json.load(scene_data)['events']
 
@@ -72,16 +71,6 @@ class Game:
     def process_turn(self):
         self.turn += 1
         self.current_scene.run_scene()
-
-
-class Map:
-    def __init__(self):
-        self.rooms = []
-
-        with open("world.csv") as world:
-            worldreader = csv.reader(world)
-            for row in worldreader:
-                self.rooms.append(row)
 
 
 class Room:
