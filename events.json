@@ -679,16 +679,28 @@
         {
             "name": "jungle4",
             "directions": [
+                "savannah2",
                 false,
-                false,
-                false,
+                "swamp1",
                 false
             ],
             "visited": false,
             "is_death": false,
-            "is_victory": true,
-            "intro_message": "You find a clearing in the jungle.\nSeems like a good place to make a tree house.",
-            "victory_message": "\"Feels like I just won, like, I don't know.... \nlife?\""
+            "is_victory": false,
+            "intro_message": "You begin walking through a jungle.\n\"Wow this is a jungly jungle.\"",
+            "look_message": "You could probably won't be able to head east or west.\nI recommend going north or south.\nWait!\nWhat is that!\nYou hear a rustle in the bushes.\n...\nFalse alarm. It was just a bunny.\n\"Why is there a bunny in the jungle?\"",
+            "obtainable_items": [
+              {
+                "item": "bush",
+                "message": "\"hmmm... Where can I put this?\""
+              }
+            ],
+            "unobtainable_items": [
+              {
+                "item": "bunny",
+                "message": "You want a bunny?\nWell now your gonna learn you can't always get what you want."
+              }
+            ]
         },
         {
             "name": "water4",
@@ -999,6 +1011,148 @@
       			"is_victory": false,
       			"intro_message": "You walk up mountain and become tired.\nYou see a nice cave to take a nap.\nYou walk inside the cave and find a grizzly bear!",
       			"death_message": "The bear jumps up and claws you right in the face.\n\"I get this far and your gonna kill me with a grizzly bear and not even give me a chance to save myself?\"\n\"Yep\""
-      		}
+      		},
+          {
+      			"name": "hills1",
+      			"directions": [
+      				"cliff1",
+      				"savannah1",
+      				"plain1",
+      				false
+      			],
+      			"visited": false,
+      			"is_death": false,
+      			"is_victory": false,
+      			"intro_message": "You find a nice hilly area.\nLike really nice\nand really hilly",
+      			"look_message": "Does your tiny brain not comprehend \"nice\" and \"hilly\"?\nMight as well head north, east, or south.",
+      			"unobtainable_items": [
+      				{
+      					"item": "hill",
+      					"message": "Did you really think that would be possible?"
+      				}
+      			]
+      		},
+          {
+      			"name": "desert2",
+      			"directions": [
+      			  false,
+      				"plain1",
+      				false,
+      				false
+      			],
+      			"visited": false,
+      			"is_death": true,
+      			"is_victory": false,
+      			"intro_message": "You start walking in a desert.\nYou see sand.\nLots and lots of sand.\nAnd some cacti.\nAnd is that a desert kangaroo?",
+      			"death_message": "You go up to the kangaroo cause it looked friendly.\nUnfortunately, the kangaroo jumps up and kicks you very hard right in the face.\nYou fall to the ground."
+      		},
+          {
+      			"name": "plain1",
+      			"directions": [
+      				"hills1",
+      				false,
+      				"plain2",
+      				"desert1"
+      			],
+      			"visited": false,
+      			"is_death": false,
+      			"is_victory": false,
+      			"intro_message": "Woah!\nWhat is that?\nIs it a bird?\nIs it a plane?\nWait.\nIt is a plane!\nBut it's a p-l-a-i-n.\nCause your wwalking in a plain.",
+      			"look_message": "Didn't you understand that you're in a plain from the punny message above?\nAnyways you can jump, skip, or hop any direction except the east.",
+      			"unobtainable_items": [
+      				{
+      					"item": "bird",
+      					"message": "I told you, it wasn't a bird.\nIt was a plain."
+      				}
+      			]
+      		},
+          {
+      			"name": "swamp1",
+      			"directions": [
+      				"jungle4",
+      				false,
+      				"swamp3",
+      				"swamp2"
+      			],
+      			"visited": false,
+      			"is_death": false,
+      			"is_victory": false,
+      			"intro_message": "You look down and your like:\n\"Hey, I'm walking in a swamp!\"",
+      			"look_message": "Looks swampy.\nTry traveling north,\nor maybe south,\nbut, hey, west doesn't look too shabby either."
+      		},
+          {
+      			"name": "swamp2",
+      			"directions": [
+      				false,
+      				"swamp1",
+      				false,
+      				"plain2"
+      			],
+      			"visited": false,
+      			"is_death": false,
+      			"is_victory": false,
+      			"intro_message": "Yer wookin in ey swump.\n*clears throat*\nI mean:\nYou're walking in a swamp.",
+      			"look_message": "Go to the east or the west cause you can't go north or south."
+      		},
+          {
+      			"name": "swamp3",
+      			"directions": [
+      				false,
+      				false,
+      			  false,
+      				false
+      			],
+      			"visited": false,
+      			"is_death": true,
+      			"is_victory": false,
+      			"intro_message": "You continue walking in swamp.\nWait...\nWhat's lurking in the water over there?",
+      			"death_message": "It's an alligator.\nWait.\nIt's in alligator!\nYou run away but get you foot stuck in the mud.\nThe alligator reaches you before you can get your foot out.\nHe starts biting you,\nand keeps biting you,\nand just keeps biting you."
+      		},
+          {
+      			"name": "plain2",
+      			"directions": [
+      				"plain1",
+      				"swamp2",
+      				false,
+      				"forest4"
+      			],
+      			"visited": false,
+      			"is_death": false,
+      			"is_victory": false,
+      			"intro_message": "You continue walking and see a little prairie dog in a plain.\n\"Here prairie, prairie, prairie dog.\"\nThe prairie dog quickly runs away.",
+      			"visited_message": "You continue walking and realize you are in a plain.",
+      			"look_message": "Looks like you could head any direction except south.",
+      			"unobtainable_items": [
+      				{
+      					"item": "prairie dog",
+      					"message": "I already told you, it ran away."
+      				}
+      			]
+      		},
+          {
+            "name": "forest4",
+            "directions": [
+              false,
+              "plain2",
+              false,
+              "forest5"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "You stumble into a forest.\nHey look berries!",
+            "visited_message": "You stumble into a forest.",
+            "look_message": "Why not try heading east or west?",
+            "choices": [
+              {
+                "message": "pick berries",
+                "item": "food"
+              },
+              {
+                "message": "leave berries",
+                "item": ""
+              }
+            ]
+          },
       ]
 }

@@ -195,7 +195,7 @@ class Room:
             else:
                 spaced_print('\nYou didn\'t specify what you wanted to take.\n')
 
-        elif commands[0] in ["go", "move", "walk", "travel", "run", "skip", "hop", "crawl"]:
+        elif commands[0] in ["go", "move", "walk", "travel", "run", "skip", "hop", "crawl", "jump"]:
             if len(commands) > 1:
                 if commands[1] in ["north", "up"]:
                     if self.get('directions')[0]:
