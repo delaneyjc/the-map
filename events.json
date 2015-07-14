@@ -687,8 +687,9 @@
             "visited": false,
             "is_death": false,
             "is_victory": false,
-            "intro_message": "You begin walking through a jungle.\n\"Wow this is a jungly jungle.\"",
-            "look_message": "You could probably won't be able to head east or west.\nI recommend going north or south.\nWait!\nWhat is that!\nYou hear a rustle in the bushes.\n...\nFalse alarm. It was just a bunny.\n\"Why is there a bunny in the jungle?\"",
+            "intro_message": "You begin walking through a jungle.\n\"Wow this is a jungly jungle.\"\nWait!\nWhat is that!\nYou hear a rustle in the bushes.\n...\nFalse alarm. It was just a bunny.\n\"Why is there a bunny in the jungle?\"",
+            "visited_message": "You begin walking through a jungle.\n\"Wow this is a jungly jungle.\"",
+            "look_message": "You could probably won't be able to head east or west.\nI recommend going north or south.",
             "obtainable_items": [
               {
                 "item": "bush",
@@ -866,26 +867,16 @@
             "visited": false,
             "is_death": true,
             "is_victory": false,
-            "intro_message": "You keep walking along the path when, suddenly, giant spiders start chasing you.\nYou start sprinting as fast as you can!\nUp ahead you realize there is a cliff.\nYou keep running and reach the edge of the cliff\nYou have two choices:",
+            "intro_message": "You keep walking along the path when, suddenly, giant spiders start chasing you.\nYou start sprinting as fast as you can!\nUp ahead you realize there is a cliff.\nYou keep running and reach the edge of the cliff",
             "visited_message": "Hey you've been here before!\nThis is where the spiders chased you\n but they all feel off the cliff.\nYou easily hang glide across it.",
-            "death_message": "",
+            "death_message": "You have two choices:\njump off cliff or let spiders eat you.\nYou decide to jump off the cliff,\nhoping to find a ledge of some sort.\n\nUnfortunately there was no ledge.\nYou hit the ground.",
             "look_message": "You can go anywhere except south.",
             "required_to_live": [
               {
                 "item": "glider",
                 "message": "You start sprinting and realize there is a cliff up ahead\nso you pull out your hang glider and keep running.\nWhen you reach the cliff,\nyou jump and easily glide across.\n\"Wheeee\"\nYou watch the spiders fall off the cliff and laugh at their stupidity!"
               }
-            ],
-            "choices": [
-      				{
-                "choice": "jump off cliff",
-      					"message": "You jump hoping you can land on a ledge\nbut you can't.\nYou hit the ground very hard"
-      				},
-              {
-                "choice": "get eaten by spiders",
-                "message": "The spiders eat you alive"
-              }
-      			]
+            ]
           },
           {
             "name": "mountains3",
@@ -899,7 +890,7 @@
             "is_death": false,
             "is_victory": false,
             "intro_message": "You continue walking through the mountains.",
-            "look_message": "Looks like mountains\nDuh\nYou can go south or back east.",
+            "look_message": "Looks like mountains,\nduh.\nYou can go south or back east.",
             "obtainable_items": [
               {
                 "item": "mountain",
@@ -1035,8 +1026,8 @@
           {
       			"name": "desert2",
       			"directions": [
-      			  false,
-      				"plain1",
+              false,
+              false,
       				false,
       				false
       			],
@@ -1057,7 +1048,7 @@
       			"visited": false,
       			"is_death": false,
       			"is_victory": false,
-      			"intro_message": "Woah!\nWhat is that?\nIs it a bird?\nIs it a plane?\nWait.\nIt is a plane!\nBut it's a p-l-a-i-n.\nCause your wwalking in a plain.",
+      			"intro_message": "Woah!\nWhat is that?\nIs it a bird?\nIs it a plane?\nWait.\nIt is a plane!\nBut it's a p-l-a-i-n.\nCause your walking in a plain.",
       			"look_message": "Didn't you understand that you're in a plain from the punny message above?\nAnyways you can jump, skip, or hop any direction except the east.",
       			"unobtainable_items": [
       				{
@@ -1119,12 +1110,12 @@
       			"visited": false,
       			"is_death": false,
       			"is_victory": false,
-      			"intro_message": "You continue walking and see a little prairie dog in a plain.\n\"Here prairie, prairie, prairie dog.\"\nThe prairie dog quickly runs away.",
+      			"intro_message": "You continue walking and see a little prairie-dog in a plain.\n\"Here prairie, prairie, prairie-dog.\"\nThe prairie-dog quickly runs away.",
       			"visited_message": "You continue walking and realize you are in a plain.",
       			"look_message": "Looks like you could head any direction except south.",
       			"unobtainable_items": [
       				{
-      					"item": "prairie dog",
+      					"item": "prairie-dog",
       					"message": "I already told you, it ran away."
       				}
       			]
@@ -1145,14 +1136,142 @@
             "look_message": "Why not try heading east or west?",
             "choices": [
               {
-                "message": "pick berries",
-                "item": "food"
+                "choice": "pick berries",
+                "message": "Looks yummy.",
+                "item": "berries"
               },
               {
-                "message": "leave berries",
+                "choice": "leave berries",
+                "message": "Who knows what kind of berries those are.",
                 "item": ""
               }
             ]
           },
+          {
+            "name": "forest5",
+            "directions": [
+              false,
+              "forest4",
+              "forest7",
+              "forest6"
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "You continue walking through a forest and realize you are very hungry.\nWhen was the last time you ate?",
+            "visited_message": "You continue walking through a forest.",
+            "death_message": "You seriously should eat something.\nYou vision begins to blur.\nYou pass out.",
+            "look_message": "You can head direction except north.\nLooks foresty.",
+            "required_to_live": [
+              {
+                "item": "berries",
+                "message": "*munch* *munch*\n\"Glad I picked those berries\""
+              }
+            ]
+          },
+          {
+            "name": "forest6",
+            "directions": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "Whoa,\nwhat is that!\nYour head is spinning and you can't tell if what you see is real.",
+            "death_message": "Look!\nIt's water!\nYou sprint to the water cause you're sooo thirsty.\nYou finally get there and then start falling.\n\"What??\"\nThe berries made you hallucinate.\nWhat you thought was a pond, was actually a cliff.\nYou don't have time to think.\nYou hit the ground."
+          },
+          {
+            "name": "forest7",
+            "directions": [
+              "forest5",
+              false,
+              false,
+              "forest8"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "Are those....\n....\ngigantic candy canes.\nIt looks like a candy cane forest.\nThose berries are messing with your head.",
+            "visited_message": "Hey! It's the candy cane forest.",
+            "look_message": "Did you not understand,\nit looks like big candy canes.\nPaths lead north and west.",
+            "obtainable_items": [
+              {
+                "item": "candy cane",
+                "message": "I like candy canes.\nYummy, yummy candy canes.",
+                "required": ""
+              }
+            ]
+          },
+          {
+            "name": "forest8",
+            "directions": [
+              false,
+              "forest8",
+              "forest10",
+              "forest9"
+            ],
+            "visited": false,
+            "is_death": false,
+            "is_victory": false,
+            "intro_message": "Wooooooaaaaaahhhh.\nIt's a unicorn in the candy cane forest.\nYa you're definitely crazy.",
+            "visited_message": "You keep walking through the candy can forest.",
+            "look_message": "Look like you can go anywhere except north.",
+            "unobtainable_items": [
+              {
+                "item": "unicorn",
+                "message": "Taking unicorns from their rightful home is wrong."
+              }
+            ],
+            "choices": [
+              {
+                "choice": "kill unicorn",
+                "message": "You find a gun pick it up and brutally murder the unicorn.\nYou walk to it's dead body and steal his horn.\nYou are a terrible person.",
+                "item": "horn"
+              },
+              {
+                "choice": "leave unicorn",
+                "message": "You leave the unicorn alone.\nYou don't want to be close to an unpredictable, magical creature.\nBesides, it looked peaceful.",
+                "item": ""
+              }
+            ]
+          },
+          {
+            "name": "forest9",
+            "directions": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "visited": false,
+            "is_death": true,
+            "is_victory": false,
+            "intro_message": "Man, you're stil seeing candy canes.\nYou begin to not feel well.\n\"Seriously, what was in those berries?\"",
+            "death_message": "You vision begins to blur.\nYou start throwing up.\nThen you pass out."
+          },
+          {
+      			"name": "forest10",
+      			"directions": [
+      			    false,
+                false,
+                false,
+                false
+      			],
+      			"visited": false,
+      			"is_death": true,
+      			"is_victory": true,
+      			"intro_message": "This candy cane forest in never-ending!\nYou begin to get tired.\nYou're soooo sick of walking!",
+      			"death_message": "You're exhausted and can't take another step.\nYou're severely dehydrated.\nYou pass out.",
+      			"victory_message": "You fall to the ground\nand the world fades to black...\n\nYou awake on the floor of a forest.\n\n\"Where am I\"\n\nThen it hits you.\nYou're still in the candy cane forest.\nIt's pretty nice in this clearing though.\nThere's pretty animals that you've never seen before.\nAnd look, there's water!\nYou decide to build a candy cane shack here.\nIt's nice, calm, and comfortable.",
+      			"required_to_live": [
+      				{
+      					"item": "horn",
+      					"message": ""
+      				}
+      			]
+      		}
       ]
 }
